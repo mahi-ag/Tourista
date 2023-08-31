@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    background-image: url(background-img.jpg);
+    background-image: url(images/background-img.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -26,6 +26,18 @@ ul{
 li{
     float: center;
     display: inline;
+}
+
+#desc{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+#desc p{
+    color: #a0a7a7;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .form-wrapper {
@@ -77,9 +89,10 @@ li a:hover {
 }
 
 .signup-form{
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #ededee7b;
+    background-color:rgb(237, 237, 238,0.2);
+    border-radius: 5%;
     margin: 3em auto;
     padding: 0 1em;
     max-width: 370px;
@@ -101,15 +114,9 @@ input[type=text], input[type=password] , input[type=email] {
     outline: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
     opacity: 1;
 }
-
-
-/* input[type=text]:focus, input[type=password]:focus ,input[type=email]:focus {
-    background-color: #ddd;
-    outline: none;
-} */
 
 .container {
     padding: 16px;
@@ -132,6 +139,11 @@ button:hover {
 .login-form{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #F8F1FF;
+    background-color:rgb(237, 237, 238,0.2);
+    border-radius: 5%;
+    margin: 3em auto;
+    padding: 0 1em;
+    max-width: 370px;
 }
 
 .login{
@@ -144,24 +156,13 @@ button:hover {
     color: #F8F1FF;
 }
 
-.button1 , .button{
+.button1 , .button , .explore{
     width: 250px;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 4px 2px;
 }
-
-/* .question{
-    color:#ddd;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-input[type=search]{
-    text-align: center;
-    width: auto;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: fixed;
-    background-color:rgba(168, 123, 123, 0);
-} */
 
 h2{
     color:#a0a7a7;
@@ -181,4 +182,65 @@ input[type=search] {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: larger;
     text-align: center;
+}
+
+.card {
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid #ffff;
+    position: relative;
+    margin: 10px;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    top:0;
+    right: -120%;
+    position: absolute;
+    backdrop-filter: blur(4px);
+    border-radius: 15px;
+    color:#ffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+
+.card:hover .card-body{
+    right:-10%;
+} 
+
+.card-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.card-sub-title{
+    text-transform:capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-info{
+    font-size:16px;
+    line-height:18.5px;
+
+    font-weight:400;
+}
+
+.reviews{
+    display: inline-flex;
+    justify-content: space-between;
 }
