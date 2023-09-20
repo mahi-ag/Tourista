@@ -5,6 +5,9 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+html{
+    scroll-behavior: smooth
+}
 
 p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -36,7 +39,7 @@ li{
 }
 
 #desc p{
-    color: #a0a7a7;
+    color: #ffffff;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
@@ -93,6 +96,7 @@ li a:hover {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color:rgb(237, 237, 238,0.2);
     border-radius: 5%;
+    border: 2px solid white;
     margin: 3em auto;
     padding: 0 1em;
     max-width: 370px;
@@ -141,6 +145,7 @@ button:hover {
     color: #F8F1FF;
     background-color:rgb(237, 237, 238,0.2);
     border-radius: 5%;
+    border: 2px solid white;
     margin: 3em auto;
     padding: 0 1em;
     max-width: 370px;
@@ -181,6 +186,13 @@ input[type=search] {
     outline: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: larger;
+    text-align: center;
+}
+
+.reviews{
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -236,11 +248,35 @@ input[type=search] {
 .card-info{
     font-size:16px;
     line-height:18.5px;
-
     font-weight:400;
 }
 
-.reviews{
-    display: inline-flex;
-    justify-content: space-between;
+.social i{
+    color: white;
+    padding: 20px;
+    font-size:20px;
+    cursor: pointer;
+    transition:0.5s;
+}
+
+.social i:hover{
+    font-size: 25px;
+}
+
+#fb:hover{
+    color:#4267B2 ;
+}
+
+#insta:hover{
+    color:palevioletred;
+}
+
+#twitter:hover{
+    color: #1DA1F2;
+}
+
+span{
+    color: #F8F1FF;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
